@@ -1,0 +1,285 @@
+/* General settings */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1f24;
+    color: #eaeaea;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Central container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #16191e;
+    color: #fff;
+    padding: 60px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s;
+}
+
+header p {
+    font-size: 24px;
+    margin: 15px 0;
+    animation: fadeInUp 1s;
+}
+
+/* Home section */
+#home, #about, #roadmap, #animation, #community {
+    padding: 50px 20px;
+}
+
+#home h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #f39c12;
+    text-transform: uppercase;
+    animation: fadeInDown 1s;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #bdc3c7;
+    line-height: 1.8;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Narrative Section */
+#narrative h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #f39c12;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#narrative h3 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #f1c40f;
+    font-weight: 600;
+}
+
+#narrative p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #bdc3c7;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Hover animations for images */
+.hero-image, .sigma-gif {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.hero-image:hover, .sigma-gif:hover {
+    transform: scale(1.1);
+}
+
+/* Roadmap section */
+#roadmap {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-event {
+    background-color: #22272e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-event.completed {
+    border-left: 4px solid #f39c12;
+}
+
+.timeline-event.highlight {
+    background-color: #f39c12;
+    color: #22272e;
+}
+
+.timeline-event.highlight h3, .timeline-event.highlight p {
+    color: #fff;
+}
+
+.timeline-event h3 {
+    margin: 0;
+    color: #f39c12;
+    font-size: 24px;
+}
+
+.timeline-event p {
+    color: #bdc3c7;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Hover effect for roadmap events */
+.timeline-event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* pumpfun section */
+#pumpfun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+#pumpfun h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #f39c12;
+    text-transform: uppercase;
+}
+
+#pumpfun p {
+    max-width: 700px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#pumpfun a {
+    text-decoration: none;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#pumpfun a:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Styles for community buttons */
+#community ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#community li {
+    display: inline;
+}
+
+#community .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f39c12;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#community .btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background-color: #16191e;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .hero-image, .sigma-gif {
+        width: 100%;
+    }
+
+    .timeline-event {
+        width: 100%;
+    }
+}
